@@ -22,11 +22,15 @@ from django.http import HttpResponse
 def hello(request):
     return HttpResponse('''
         <h1>Hello, <a href="http://facebook.com/askdjango/" target="_blank">AskDjango</a></h1>
+        <h2><a href="/blog">Blog List</a></h2>
     ''')
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$' , hello),
+    url(r'^blog/$', 'blog.views.post_list'),
+    url(r'^blog/(?P<pk>\d+)/$', 'blog.views.post_detail'),
+
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
