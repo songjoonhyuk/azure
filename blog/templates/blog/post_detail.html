@@ -1,3 +1,6 @@
+{% extends "blog/base.html" %}
+{% block content %}
+
 <h1> {{ post.title }} </h1>
 
 <hr>
@@ -19,3 +22,4 @@ test1
 
 <div class="fb-comments" data-href="{{request.build_absolute_url}}" data-width="20" data-numposts="5">test3</div>
 
+{% endblock %}
