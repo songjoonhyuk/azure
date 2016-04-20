@@ -7,12 +7,14 @@
 <img src = "{{post.photo.url}}"/>
 <hr>
 
-<div class="fb-comments" data-href="{{request.build_absolute_url}}" data-numposts="5"></div>
+<div class="fb-comments" data-href="{{request.build_absolute_url}}" data-numposts="5">
+test1
+</div>
 
 <a href="{% url "blog.views.post_list" %}"> 글 목록으로 </a>
 
-<div class="fb-comments" data-href="{{request.build_absolute_url}}" data-numposts="5"></div>
+<div class="fb-comments" data-href="{{request.build_absolute_url}}" data-numposts="5">test2</div>
 
 <div id="fb-root"></div>
 
-<div class="fb-comments" data-href="{{request.build_absolute_url}}" data-numposts="5"></div>
+<div class="fb-comments" data-href="{{request.build_absolute_url}}" data-numposts="5">test3</div>
