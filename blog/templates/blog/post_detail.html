@@ -10,16 +10,14 @@
 <img src = "{{post.photo.url}}"/>
 <hr>
 
-<div class="fb-comments" data-href="http://songazure.azurewebsites.net" data-width="10" data-numposts="5">
-test1
-</div>
+<div class="fb-comments" data-href="http://songazure.azurewebsites.net" data-numposts="5">test2</div>
 
 <a href="{% url "blog.views.post_list" %}"> 글 목록으로 </a>
 
-<div class="fb-comments" data-href="http://songazure.azurewebsites.net" data-numposts="5">test2</div>
+
 
 <div id="fb-root"></div>
 
-<div class="fb-comments" data-href="{{request.build_absolute_url}}" data-width="20" data-numposts="5">test3</div>
+<!-- <div class="fb-comments" data-href="{{request.build_absolute_url}}" data-width="20" data-numposts="5">test3</div> -->
 
 {% endblock %}
